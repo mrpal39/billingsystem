@@ -14,9 +14,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'secret'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['django-billing.herokuapp.com']
+ALLOWED_HOSTS = ['django-billing.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -24,6 +24,9 @@ ALLOWED_HOSTS = ['django-billing.herokuapp.com']
 INSTALLED_APPS = [
     'gstbillingapp.apps.GstbillingappConfig',
     'social_django',
+
+    'crispy_forms',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -109,6 +112,7 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+CRISPY_TEMPLATE_PACK = 'uni_form'
 
 
 # Static files (CSS, JavaScript, Images)
