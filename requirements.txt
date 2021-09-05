@@ -9,6 +9,7 @@ Django==3.2.7
 django-crispy-forms==1.12.0
 django-heroku==0.3.1
 docopt==0.6.2
+gunicorn==20.1.0
 idna==3.2
 num2words==0.5.10
 oauthlib==3.1.1
